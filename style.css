@@ -25,9 +25,29 @@ h1 {
   font-size: 44px;
 }
 
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: auto 1fr;
+  /* grid-auto-flow: column; */
+  /* gap: 7px; */
+}
+
 .upper-color-child-container {
   display: flex;
   gap: 8px;
   margin-left: 12px;
   margin-top: 48px;
+}
+
+.grid-container {
+  grid-row: 2 / -2;
+  margin-top: 16px;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 8px repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-auto-flow: column;
+  margin-bottom: 48px;
 }
