@@ -58,8 +58,68 @@ h1 {
   width: 80px;
   height: 32px;
   color: #fff;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 24px;
   font-weight: bold;
   border: #000 solid 1px;
+}
+
+.blue {
+  background-color: mediumblue;
+}
+
+.goldenrod {
+  background-color: goldenrod;
+  color: black;
+}
+
+.mediumseagreen {
+  background-color: mediumseagreen;
+  color: black;
+}
+
+.saddlebrown {
+  background-color: saddlebrown;
+  color: white;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
+
+.firebrick {
+  background-color: firebrick;
+  color: white;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.gold {
+  background-color: gold;
+  color: black;
+}
+
+.purple {
+  background-color: purple;
+  color: white;
+}
+
+.hotpink {
+  background-color: hotpink;
+  color: black;
+}
+
+.skyblue {
+  background-color: skyblue;
+  color: black;
 }
