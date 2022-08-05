@@ -16,6 +16,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: monospace;
+  background-color: #f8f9fa;
 }
 
 h1 {
@@ -52,11 +58,12 @@ h1 {
   margin-bottom: 48px;
 }
 
+.child,
 .color-child,
 .upper-color-child {
-  padding: 4px;
+  padding: 8px;
   width: 80px;
-  height: 32px;
+  height: 35px;
   color: #fff;
   display: flex;
   justify-content: center;
