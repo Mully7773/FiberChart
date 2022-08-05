@@ -43,7 +43,7 @@ h1 {
 .upper-color-child-container {
   display: flex;
   gap: 8px;
-  margin-left: 12px;
+  margin-left: 16px;
   margin-top: 48px;
 }
 
@@ -61,8 +61,8 @@ h1 {
 .child,
 .color-child,
 .upper-color-child {
-  padding: 8px;
-  width: 80px;
+  padding: 12px;
+  width: 96px;
   height: 35px;
   color: #fff;
   display: flex;
@@ -71,6 +71,10 @@ h1 {
   font-size: 24px;
   font-weight: bold;
   border: #000 solid 1px;
+}
+
+.upper-color-child {
+  margin-bottom: 4px;
 }
 
 .blue {
@@ -129,4 +133,17 @@ h1 {
 .skyblue {
   background-color: skyblue;
   color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.no-border {
+  border: none;
+}
+
+.empty-column {
+  width: 8px !important;
+  gap: 100px;
 }
