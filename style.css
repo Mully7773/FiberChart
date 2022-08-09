@@ -44,6 +44,8 @@ header {
   color: #444;
   font-size: 4.4rem;
   padding: 0 4.8rem;
+  /* text-shadow: 2px 2px #aeb4ba; */
+  text-shadow: 0 1.7px #fff;
 }
 
 i {
@@ -101,6 +103,7 @@ i {
   font-weight: bold;
   border: #000 solid 1px;
   border-radius: 0.2rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .color-child {
@@ -178,6 +181,7 @@ i {
   padding: 3.2rem;
   background-color: #dae1e8;
   border-radius: 0.6rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 .flex-form *:focus {
@@ -204,7 +208,7 @@ i {
   border: none;
   background-color: #c4cbd1;
   border-radius: 0.2rem;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   color: #333;
 }
 
@@ -241,6 +245,7 @@ label {
 }
 
 .no-border {
+  box-shadow: none;
   border: none;
 }
 
@@ -250,6 +255,9 @@ label {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   padding: 1.6rem;
   border-top: 1px solid #c4cbd1;
   font-size: 1.2rem;
