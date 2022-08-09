@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="user-scalable = yes" />
+
+    <!-- content="width=device-width, initial-scale=1.0" -->
     <title>FiberChart</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="queries.css" />
@@ -11,10 +13,12 @@
   </head>
   <body>
     <header>
-      <h1 class="app-title">Fiber
+      <h1 class="app-title">
+        Fiber
         <!-- <span>
         <img class="logo" src="/icons8-fiber-64.png" alt="fiber cable logo">
-      </span> -->Chart</h1>
+      </span> -->Chart
+      </h1>
     </header>
 
     <!-- Major container - main content consider <main>-->
@@ -36,7 +40,7 @@
         <div class="upper-color-child skyblue">Aqua</div>
       </div>
       <!-- Minor container - Grid -->
-      <article class="grid-container">
+      <section class="grid-container">
         <div class="color-child blue">Blue</div>
         <div class="color-child goldenrod">Orange</div>
         <div class="color-child mediumseagreen">Green</div>
@@ -207,10 +211,10 @@
         <div class="child skyblue">142</div>
         <div class="child skyblue">143</div>
         <div class="child skyblue">144</div>
-      </article>
+      </section>
     </div>
     <!-- Form section -->
-    <section class="forms">
+    <div class="forms">
       <!-- Container for forms -->
       <div class="flex-form">
         <form class="select-form">
@@ -231,12 +235,11 @@
           </select>
         </form>
         <form class="input-form">
-          <input placeholder="Number" class="number-input">
-          </input>
+          <input placeholder="Number" class="number-input" />
         </form>
         <button class="reset-btn">Reset</button>
       </div>
-    </section>
+    </div>
     <footer>
       <p>Developed by Nick Mullenmeister</p>
     </footer>
