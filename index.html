@@ -6,23 +6,20 @@
     <meta name="viewport" content="user-scalable = yes" />
 
     <!-- content="width=device-width, initial-scale=1.0" -->
-    <title>FiberChart</title>
+    <title>FiberChart - Find your fibers</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="queries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="script.js"></script>
   </head>
   <body>
     <header>
-      <h1 class="app-title">
-        Fiber
-        <i>
-          <img
-            class="logo"
-            src="./img/icons8-fiber-64.png"
-            alt="fiber cable logo"
-          /> </i
-        >Chart
-      </h1>
+      <h1 class="app-title">FiberChart</h1>
     </header>
 
     <!-- Major container - main content consider <main>-->
@@ -222,8 +219,9 @@
       <!-- Container for forms -->
       <div class="flex-form">
         <form class="select-form">
+          <label for="fiber-select">Select Fiber</label>
           <select class="fiber-select">
-            <option value="" disabled selected>Fibers</option>
+            <option value="" disabled selected>#</option>
             <option value="12">12</option>
             <option value="24">24</option>
             <option value="36">36</option>
@@ -239,13 +237,16 @@
           </select>
         </form>
         <form class="input-form">
-          <input placeholder="Number" class="number-input" />
+          <label for="number-input">Input Number</label>
+          <input type="number" placeholder="12" class="number-input" required />
         </form>
         <button class="reset-btn">Reset</button>
       </div>
     </div>
     <footer>
       <p>Developed by Nick Mullenmeister</p>
+      <p>Concept by Jared Korbel</p>
+      <p class="copyright">Copyright &copy; 2022, All rights reserved.</p>
     </footer>
   </body>
 </html>
