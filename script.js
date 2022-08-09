@@ -8,10 +8,9 @@ const numberInput = document.querySelector(".number-input");
 const resetBtn = document.querySelector(".reset-btn");
 
 // Functions
-const filterFibers = function (e) {
+const filterFibers = (e) => {
   e.preventDefault();
   const fiberValue = +fiberSelect.value;
-  console.log(fiberValue);
 
   const numberFilter = children.forEach(function (number, i) {
     let fiberNumber = number.textContent;
@@ -24,5 +23,11 @@ const filterFibers = function (e) {
   });
 };
 
+const resetApp = () => {
+  location.reload();
+  window.scrollTo(0, 0);
+};
+
 //Event listeners
 fiberSelect.addEventListener("change", filterFibers);
+resetBtn.addEventListener("click", resetApp);
