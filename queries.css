@@ -22,6 +22,48 @@
     padding: 1rem;
     width: 7rem;
     height: 2.5rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
+
+@media (max-width: 51em) {
+  html {
+    font-size: 42%;
+  }
+  .child,
+  .color-child,
+  .upper-color-child {
+    padding: 0.8rem;
+    width: 6.8rem;
+    height: 2.2rem;
+    font-size: 1.8;
+  }
+}
+@media (max-width: 43em) {
+  html {
+    font-size: 37%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  html {
+    font-size: 33%;
+  }
+}
+@media (max-width: 33em) {
+  html {
+    font-size: 28%;
+  }
+}
+
+@media (max-width: 28.5em) {
+  html {
+    font-size: 22.5%;
+  }
+}
+
+/* @media (max-width: 15.5em) {
+  html {
+    font-size: 10.5%;
+  }
+} */
