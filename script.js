@@ -14,9 +14,12 @@ const filterFibers = function (e) {
   console.log(fiberValue);
 
   const numberFilter = children.forEach(function (number, i) {
-    let myNumbers = number.textContent;
-    if (myNumbers >= fiberValue) {
+    let fiberNumber = number.textContent;
+    if (fiberNumber >= fiberValue) {
       number.classList.add("hidden");
+    }
+    if (fiberNumber <= fiberValue) {
+      number.classList.remove("hidden");
     }
   });
 };
