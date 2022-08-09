@@ -57,24 +57,11 @@
   html {
     font-size: 33%;
   }
-  .child,
-  .color-child,
-  .upper-color-child {
-    padding: 0.5rem;
-    width: 4.8rem;
-    height: 1.4rem;
-  }
 }
+
 @media (max-width: 33em) {
   html {
     font-size: 28%;
-  }
-  .child,
-  .color-child,
-  .upper-color-child {
-    padding: 0.4rem;
-    width: 4.2rem;
-    height: 1.2rem;
   }
 }
 
@@ -82,31 +69,16 @@
   html {
     font-size: 22.5%;
   }
-  .child,
-  .color-child,
-  .upper-color-child {
-    width: 3.4rem;
-  }
 }
 
 @media (max-width: 22.5em) {
   html {
     font-size: 18%;
   }
-  .child,
-  .color-child,
-  .upper-color-child {
-    width: 2.6rem;
-  }
-}
 
-@media (max-width: 18em) {
-  html {
-    font-size: 15%;
-  }
-  .child,
-  .color-child,
-  .upper-color-child {
-    width: 2.2rem;
+  @media (max-width: 18em) {
+    html {
+      font-size: 15%;
+    }
   }
 }
