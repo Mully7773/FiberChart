@@ -43,16 +43,38 @@
   html {
     font-size: 37%;
   }
+
+  .child,
+  .color-child,
+  .upper-color-child {
+    padding: 0.6rem;
+    width: 6.2rem;
+    height: 1.8rem;
+  }
 }
 
 @media (max-width: 37.5em) {
   html {
     font-size: 33%;
   }
+  .child,
+  .color-child,
+  .upper-color-child {
+    padding: 0.5rem;
+    width: 5.6rem;
+    height: 1.4rem;
+  }
 }
 @media (max-width: 33em) {
   html {
     font-size: 28%;
+  }
+  .child,
+  .color-child,
+  .upper-color-child {
+    padding: 0.4rem;
+    width: 5.3rem;
+    height: 1.2rem;
   }
 }
 
