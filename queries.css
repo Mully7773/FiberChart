@@ -1,0 +1,27 @@
+@media (max-width: 85em) {
+  html {
+    font-size: 56.25%;
+  }
+  .child,
+  .color-child,
+  .upper-color-child {
+    padding: 1.2rem;
+    width: 7.2rem;
+    height: 3rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 61em) {
+  html {
+    font-size: 49%;
+  }
+  .child,
+  .color-child,
+  .upper-color-child {
+    padding: 1rem;
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 1.6rem;
+  }
+}
