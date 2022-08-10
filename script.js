@@ -67,22 +67,7 @@ const resetApp = () => {
   window.scrollTo(0, 0);
 };
 
-// Event listeners
-
-darkBtn.addEventListener("click", function () {
-  mainBody.classList.add("dark-body");
-  header.classList.add("dark-header");
-  appTitle.classList.add("dark-app-title");
-  lightBtn.classList.add("dark-logo");
-  darkBtn.classList.add("dark-logo");
-  flexForm.classList.add("dark-flex-form");
-  inputs.classList.add("dark-inputs");
-  label.classList.add("dark-label");
-  numberInputLabel.classList.add("dark-label");
-  footer.classList.add("dark-footer");
-});
-
-lightBtn.addEventListener("click", function () {
+const enableLightMode = () => {
   mainBody.classList.remove("dark-body");
   header.classList.remove("dark-header");
   appTitle.classList.remove("dark-app-title");
@@ -93,8 +78,25 @@ lightBtn.addEventListener("click", function () {
   label.classList.remove("dark-label");
   numberInputLabel.classList.remove("dark-label");
   footer.classList.remove("dark-footer");
-});
+};
 
+const enableDarkMode = () => {
+  mainBody.classList.add("dark-body");
+  header.classList.add("dark-header");
+  appTitle.classList.add("dark-app-title");
+  lightBtn.classList.add("dark-logo");
+  darkBtn.classList.add("dark-logo");
+  flexForm.classList.add("dark-flex-form");
+  inputs.classList.add("dark-inputs");
+  label.classList.add("dark-label");
+  numberInputLabel.classList.add("dark-label");
+  footer.classList.add("dark-footer");
+};
+
+// Event listeners
+
+lightBtn.addEventListener("click", enableLightMode);
+darkBtn.addEventListener("click", enableDarkMode);
 form.addEventListener("submit", submitFiber);
 fiberSelect.addEventListener("change", filterFibers);
 resetBtn.addEventListener("click", resetApp);
