@@ -18,6 +18,7 @@ const inputs = document.querySelector(".inputs");
 const numberInputLabel = document.querySelector(".number-input-label");
 const label = document.querySelector("label");
 const footer = document.querySelector("footer");
+const copyrightYear = document.querySelector(".copyright-year");
 
 const darkMode = localStorage.getItem("dark-mode");
 
@@ -103,6 +104,9 @@ if (darkMode === "enabled") {
   // Note that on desktop transition into darkmode appears 1s before darkmode is initiated
   enableDarkMode();
 }
+
+const currentYear = new Date().getFullYear().toString();
+copyrightYear.textContent = currentYear;
 
 // Event listeners
 
