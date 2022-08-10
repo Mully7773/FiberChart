@@ -34,7 +34,14 @@ header {
   display: flex;
   height: 8rem;
   align-items: center;
+  justify-content: space-between;
   background-image: linear-gradient(to right, #dee4ea, #edf0f4);
+}
+
+.light-dark-mode {
+  display: flex;
+  gap: 3.2rem;
+  padding: 2.4rem;
 }
 
 .app-title {
@@ -48,18 +55,10 @@ header {
   text-shadow: 0 1.7px #fff;
 }
 
-i {
-  position: relative;
-  right: 1.2rem;
-  font-size: 0.4rem;
-}
-
 .logo {
-  position: relative;
-  /* transform: rotate(90deg); */
-  /* font-size: 4.4rem; */
-  height: 9.6rem;
-  top: 0.6rem;
+  height: 2.4rem;
+  width: 2.4rem;
+  cursor: pointer;
 }
 
 .container {

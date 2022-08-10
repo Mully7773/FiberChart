@@ -40,11 +40,11 @@ const submitFiber = (e) => {
     // console.log(fibers);
   });
 
-  const disabled = fiberSelect.disabled;
-  fiberSelectLabel.classList.add("disabled");
   resetBtn.classList.add("pulse");
 
+  const disabled = fiberSelect.disabled;
   disabled ? (fiberSelect.disabled = true) : (fiberSelect.disabled = true);
+  fiberSelectLabel.classList.add("disabled");
 };
 
 // Input validation
