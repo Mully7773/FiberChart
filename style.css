@@ -28,6 +28,9 @@ body {
   background-color: #edf0f4;
   line-height: 1;
   max-width: 160rem;
+
+  /* darkmode */
+  background-color: #2f3031;
 }
 
 header {
@@ -36,12 +39,15 @@ header {
   align-items: center;
   justify-content: space-between;
   background-image: linear-gradient(to right, #dee4ea, #edf0f4);
+
+  /* darkmode */
+  background-image: linear-gradient(to right, #474849, #2f3031);
 }
 
 .light-dark-mode {
   display: flex;
   gap: 3.2rem;
-  padding: 2.4rem;
+  padding: 3.2rem;
   margin-top: 3.2rem;
 }
 
@@ -54,12 +60,28 @@ header {
   padding: 0 4.8rem;
   /* text-shadow: 2px 2px #aeb4ba; */
   text-shadow: 0 1.7px #fff;
+
+  /* darkmode */
+  color: #d5d8dc;
+  text-shadow: 0 1.7px #bec0c3;
 }
 
 .logo {
   height: 2.4rem;
   width: 2.4rem;
   cursor: pointer;
+  transition: all 0.2s;
+
+  /* darkmode */
+  stroke: #d5d8dc;
+}
+
+.light-mode:hover {
+  stroke: #aeb4ba;
+}
+
+.dark-mode:hover {
+  fill: #aeb4ba;
 }
 
 .container {
@@ -182,6 +204,9 @@ header {
   background-color: #dae1e8;
   border-radius: 0.6rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+
+  /* darkmode */
+  background-color: #5f6062;
 }
 
 .flex-form *:focus {
@@ -210,6 +235,9 @@ header {
   border-radius: 0.2rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   color: #333;
+
+  /* darkmode */
+  background-color: #bec0c3;
 }
 
 .reset-btn {
@@ -236,6 +264,9 @@ label {
   font-weight: 600;
   margin-bottom: 1.2rem;
   color: #333;
+
+  /* darkmode */
+  color: #bec0c3;
 }
 
 .forms {
@@ -304,4 +335,7 @@ footer {
   border-top: 1px solid #c4cbd1;
   font-size: 1.2rem;
   text-align: center;
+
+  /* darkmode */
+  color: #d5d8dc;
 }
