@@ -7,6 +7,8 @@ const fiberSelect = document.querySelector(".fiber-select");
 const fiberSelectLabel = document.querySelector(".fiber-select-label");
 const numberInput = document.querySelector(".number-input");
 const resetBtn = document.querySelector(".reset-btn");
+const lightBtn = document.querySelector(".light-mode");
+const darkBtn = document.querySelector(".dark-mode");
 
 // Functions
 const filterFibers = (e) => {
@@ -57,6 +59,14 @@ const resetApp = () => {
 };
 
 // Event listeners
+
+lightBtn.addEventListener("click", function () {
+  console.log("clicked");
+});
+darkBtn.addEventListener("click", function () {
+  console.log("clicked");
+});
+
 form.addEventListener("submit", submitFiber);
 fiberSelect.addEventListener("change", filterFibers);
 resetBtn.addEventListener("click", resetApp);
