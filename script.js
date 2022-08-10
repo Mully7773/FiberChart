@@ -23,11 +23,24 @@ const filterFibers = (e) => {
   });
 };
 
+const submitFiber = function (e) {
+  e.preventDefault();
+
+  const inputValue = +numberInput.value;
+  console.log(inputValue);
+
+  const fiberLoop = children.forEach(function (number, i) {
+    let fibers = (number.textContent = i + inputValue);
+    console.log(fibers);
+  });
+};
+
 const resetApp = () => {
   location.reload();
   window.scrollTo(0, 0);
 };
 
 //Event listeners
+form.addEventListener("submit", submitFiber);
 fiberSelect.addEventListener("change", filterFibers);
 resetBtn.addEventListener("click", resetApp);
