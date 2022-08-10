@@ -29,10 +29,20 @@ const submitFiber = function (e) {
   const inputValue = +numberInput.value;
   console.log(inputValue);
 
+  if (inputValue > 999999) {
+    alert("Please enter a number less than 999999");
+    return false;
+  }
   const fiberLoop = children.forEach(function (number, i) {
     let fibers = (number.textContent = i + inputValue);
     console.log(fibers);
   });
+  const disabled = fiberSelect.disabled;
+  if (disabled) {
+    fiberSelect.disabled = true;
+  } else {
+    fiberSelect.disabled = true;
+  }
 };
 
 const resetApp = () => {
