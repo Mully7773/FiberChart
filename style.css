@@ -28,7 +28,10 @@ body {
   background-color: #edf0f4;
   line-height: 1;
   max-width: 160rem;
+  transition: all 2s;
+}
 
+.dark-body {
   /* darkmode */
   background-color: #2f3031;
 }
@@ -39,7 +42,10 @@ header {
   align-items: center;
   justify-content: space-between;
   background-image: linear-gradient(to right, #dee4ea, #edf0f4);
+  transition: all 2s;
+}
 
+.dark-header {
   /* darkmode */
   background-image: linear-gradient(to right, #474849, #2f3031);
 }
@@ -60,7 +66,10 @@ header {
   padding: 0 4.8rem;
   /* text-shadow: 2px 2px #aeb4ba; */
   text-shadow: 0 1.7px #fff;
+  transition: all 2s;
+}
 
+.dark-app-title {
   /* darkmode */
   color: #d5d8dc;
   text-shadow: 0 1.7px #bec0c3;
@@ -71,7 +80,9 @@ header {
   width: 2.4rem;
   cursor: pointer;
   transition: all 0.2s;
+}
 
+.dark-logo {
   /* darkmode */
   stroke: #d5d8dc;
 }
@@ -204,7 +215,10 @@ header {
   background-color: #dae1e8;
   border-radius: 0.6rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: all 2s;
+}
 
+.dark-flex-form {
   /* darkmode */
   background-color: #5f6062;
 }
@@ -235,7 +249,10 @@ header {
   border-radius: 0.2rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   color: #333;
+  transition: all 2s;
+}
 
+.dark-inputs {
   /* darkmode */
   background-color: #bec0c3;
 }
@@ -264,7 +281,9 @@ label {
   font-weight: 600;
   margin-bottom: 1.2rem;
   color: #333;
+}
 
+.dark-label {
   /* darkmode */
   color: #bec0c3;
 }
@@ -335,7 +354,10 @@ footer {
   border-top: 1px solid #c4cbd1;
   font-size: 1.2rem;
   text-align: center;
+  transition: all 2s;
+}
 
+.dark-footer {
   /* darkmode */
   color: #d5d8dc;
 }

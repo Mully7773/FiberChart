@@ -7,8 +7,17 @@ const fiberSelect = document.querySelector(".fiber-select");
 const fiberSelectLabel = document.querySelector(".fiber-select-label");
 const numberInput = document.querySelector(".number-input");
 const resetBtn = document.querySelector(".reset-btn");
+
 const lightBtn = document.querySelector(".light-mode");
 const darkBtn = document.querySelector(".dark-mode");
+const mainBody = document.querySelector("body");
+const header = document.querySelector("header");
+const appTitle = document.querySelector(".app-title");
+const logo = document.querySelector(".logo");
+const flexForm = document.querySelector(".flex-form");
+const inputs = document.querySelector(".inputs");
+const label = document.querySelector("label");
+const footer = document.querySelector("footer");
 
 // Functions
 const filterFibers = (e) => {
@@ -60,11 +69,26 @@ const resetApp = () => {
 
 // Event listeners
 
-lightBtn.addEventListener("click", function () {
-  console.log("clicked");
-});
 darkBtn.addEventListener("click", function () {
-  console.log("clicked");
+  mainBody.classList.add("dark-body");
+  header.classList.add("dark-header");
+  appTitle.classList.add("dark-app-title");
+  logo.classList.add("dark-logo");
+  flexForm.classList.add("dark-flex-form");
+  inputs.classList.add("dark-inputs");
+  label.classList.add("dark-label");
+  footer.classList.add("dark-footer");
+});
+
+lightBtn.addEventListener("click", function () {
+  mainBody.classList.remove("dark-body");
+  header.classList.remove("dark-header");
+  appTitle.classList.remove("dark-app-title");
+  logo.classList.remove("dark-logo");
+  flexForm.classList.remove("dark-flex-form");
+  inputs.classList.remove("dark-inputs");
+  label.classList.remove("dark-label");
+  footer.classList.remove("dark-footer");
 });
 
 form.addEventListener("submit", submitFiber);
