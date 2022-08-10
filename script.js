@@ -29,8 +29,9 @@ const submitFiber = function (e) {
   const inputValue = +numberInput.value;
   console.log(inputValue);
 
-  if (inputValue > 999999) {
-    alert("Please enter a number less than 999999");
+  //   Input validation
+  if (inputValue > 999999 || inputValue < 0) {
+    alert("Please enter a positive number less than 999999");
     return false;
   }
   const fiberLoop = children.forEach(function (number, i) {
