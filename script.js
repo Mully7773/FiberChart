@@ -40,11 +40,11 @@ const filterFibers = (e) => {
 const submitFiber = (e) => {
   e.preventDefault();
 
-  const inputValue = +numberInput.value;
-  //   console.log(inputValue);
+  const inputValue = +numberInput.value.trim();
+  // console.log(inputValue);
 
   if (positiveNumberRange(inputValue) || !numberValidation(inputValue)) {
-    alert("Please enter a positive number less than 999999");
+    alert("Please enter a positive number less than 999856");
     return false;
   }
 
@@ -61,7 +61,7 @@ const submitFiber = (e) => {
 };
 
 // Input validation
-const positiveNumberRange = (input) => input > 999999 || input < 0;
+const positiveNumberRange = (input) => input > 999856 || input < 0;
 const numberValidation = (input) => Number.isFinite(input);
 
 const resetApp = () => {
