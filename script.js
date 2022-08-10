@@ -4,6 +4,7 @@ const gridContainer = document.querySelector(".grid-container");
 const children = document.querySelectorAll(".child");
 const form = document.querySelector(".input-form");
 const fiberSelect = document.querySelector(".fiber-select");
+const fiberSelectLabel = document.querySelector(".fiber-select-label");
 const numberInput = document.querySelector(".number-input");
 const resetBtn = document.querySelector(".reset-btn");
 
@@ -40,6 +41,9 @@ const submitFiber = (e) => {
   });
 
   const disabled = fiberSelect.disabled;
+  fiberSelectLabel.classList.add("disabled");
+  resetBtn.classList.add("pulse");
+
   disabled ? (fiberSelect.disabled = true) : (fiberSelect.disabled = true);
 };
 
