@@ -15,6 +15,7 @@ const header = document.querySelector("header");
 const appTitle = document.querySelector(".app-title");
 const flexForm = document.querySelector(".flex-form");
 const inputs = document.querySelector(".inputs");
+const numberInputLabel = document.querySelector(".number-input-label");
 const label = document.querySelector("label");
 const footer = document.querySelector("footer");
 
@@ -77,6 +78,7 @@ darkBtn.addEventListener("click", function () {
   flexForm.classList.add("dark-flex-form");
   inputs.classList.add("dark-inputs");
   label.classList.add("dark-label");
+  numberInputLabel.classList.add("dark-label");
   footer.classList.add("dark-footer");
 });
 
@@ -89,6 +91,7 @@ lightBtn.addEventListener("click", function () {
   flexForm.classList.remove("dark-flex-form");
   inputs.classList.remove("dark-inputs");
   label.classList.remove("dark-label");
+  numberInputLabel.classList.remove("dark-label");
   footer.classList.remove("dark-footer");
 });
 
