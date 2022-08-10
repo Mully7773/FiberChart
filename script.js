@@ -100,6 +100,7 @@ const enableDarkMode = () => {
 };
 
 if (darkMode === "enabled") {
+  // Note that on desktop transition into darkmode appears 1s before darkmode is initiated
   enableDarkMode();
 }
 
