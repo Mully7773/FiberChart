@@ -28,7 +28,7 @@ body {
   background-color: #edf0f4;
   line-height: 1;
   max-width: 160rem;
-  transition: all 2s;
+  transition: all 1s;
 }
 
 .dark-body {
@@ -41,13 +41,32 @@ header {
   height: 8rem;
   align-items: center;
   justify-content: space-between;
-  background-image: linear-gradient(to right, #dee4ea, #edf0f4);
-  transition: all 2s;
+  background-color: #edf0f4;
+  /* background-image: linear-gradient(to right, #dee4ea, #edf0f4); */
+  transition: all 1s;
 }
+
+/* header::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #474849, #2f3031);
+  z-index: -1;
+  transition: opacity 2s linear;
+  opacity: 0;
+}
+
+header:hover::before {
+  opacity: 1;
+} */
 
 .dark-header {
   /* darkmode */
-  background-image: linear-gradient(to right, #474849, #2f3031);
+  /* background-image: linear-gradient(to right, #474849, #2f3031); */
+  background-color: #2f3031;
 }
 
 .light-dark-mode {
@@ -66,7 +85,7 @@ header {
   padding: 0 4.8rem;
   /* text-shadow: 2px 2px #aeb4ba; */
   text-shadow: 0 1.7px #fff;
-  transition: all 2s;
+  transition: all 1s;
 }
 
 .dark-app-title {
@@ -89,6 +108,7 @@ header {
 
 .light-mode:hover {
   stroke: #aeb4ba;
+  fill: #aeb4ba;
 }
 
 .dark-mode:hover {
@@ -215,7 +235,7 @@ header {
   background-color: #dae1e8;
   border-radius: 0.6rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  transition: all 2s;
+  transition: all 1s;
 }
 
 .dark-flex-form {
@@ -249,7 +269,7 @@ header {
   border-radius: 0.2rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   color: #333;
-  transition: all 2s;
+  transition: all 1s;
 }
 
 .dark-inputs {
@@ -354,7 +374,7 @@ footer {
   border-top: 1px solid #c4cbd1;
   font-size: 1.2rem;
   text-align: center;
-  transition: all 2s;
+  transition: all 1s;
 }
 
 .dark-footer {

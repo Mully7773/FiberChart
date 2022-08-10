@@ -13,7 +13,6 @@ const darkBtn = document.querySelector(".dark-mode");
 const mainBody = document.querySelector("body");
 const header = document.querySelector("header");
 const appTitle = document.querySelector(".app-title");
-const logo = document.querySelector(".logo");
 const flexForm = document.querySelector(".flex-form");
 const inputs = document.querySelector(".inputs");
 const label = document.querySelector("label");
@@ -73,7 +72,8 @@ darkBtn.addEventListener("click", function () {
   mainBody.classList.add("dark-body");
   header.classList.add("dark-header");
   appTitle.classList.add("dark-app-title");
-  logo.classList.add("dark-logo");
+  lightBtn.classList.add("dark-logo");
+  darkBtn.classList.add("dark-logo");
   flexForm.classList.add("dark-flex-form");
   inputs.classList.add("dark-inputs");
   label.classList.add("dark-label");
@@ -84,7 +84,8 @@ lightBtn.addEventListener("click", function () {
   mainBody.classList.remove("dark-body");
   header.classList.remove("dark-header");
   appTitle.classList.remove("dark-app-title");
-  logo.classList.remove("dark-logo");
+  lightBtn.classList.remove("dark-logo");
+  darkBtn.classList.remove("dark-logo");
   flexForm.classList.remove("dark-flex-form");
   inputs.classList.remove("dark-inputs");
   label.classList.remove("dark-label");
