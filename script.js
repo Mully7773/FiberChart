@@ -19,6 +19,8 @@ const numberInputLabel = document.querySelector(".number-input-label");
 const label = document.querySelector("label");
 const footer = document.querySelector("footer");
 
+const darkMode = localStorage.getItem("dark-mode");
+
 // Functions
 const filterFibers = (e) => {
   e.preventDefault();
@@ -78,6 +80,8 @@ const enableLightMode = () => {
   label.classList.remove("dark-label");
   numberInputLabel.classList.remove("dark-label");
   footer.classList.remove("dark-footer");
+
+  localStorage.setItem("dark-mode", "disabled");
 };
 
 const enableDarkMode = () => {
@@ -91,7 +95,13 @@ const enableDarkMode = () => {
   label.classList.add("dark-label");
   numberInputLabel.classList.add("dark-label");
   footer.classList.add("dark-footer");
+
+  localStorage.setItem("dark-mode", "enabled");
 };
+
+if (darkMode === "enabled") {
+  enableDarkMode();
+}
 
 // Event listeners
 
