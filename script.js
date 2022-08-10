@@ -23,35 +23,36 @@ const filterFibers = (e) => {
   });
 };
 
-const submitFiber = function (e) {
+const submitFiber = (e) => {
   e.preventDefault();
 
   const inputValue = +numberInput.value;
-  console.log(inputValue);
+  //   console.log(inputValue);
 
-  //   Input validation
-  if (inputValue > 999999 || inputValue < 0) {
+  if (positiveNumberRange(inputValue) || !numberValidation(inputValue)) {
     alert("Please enter a positive number less than 999999");
     return false;
   }
+
   const fiberLoop = children.forEach(function (number, i) {
     let fibers = (number.textContent = i + inputValue);
-    console.log(fibers);
+    // console.log(fibers);
   });
+
   const disabled = fiberSelect.disabled;
-  if (disabled) {
-    fiberSelect.disabled = true;
-  } else {
-    fiberSelect.disabled = true;
-  }
+  disabled ? (fiberSelect.disabled = true) : (fiberSelect.disabled = true);
 };
+
+// Input validation
+const positiveNumberRange = (input) => input > 999999 || input < 0;
+const numberValidation = (input) => Number.isFinite(input);
 
 const resetApp = () => {
   location.reload();
   window.scrollTo(0, 0);
 };
 
-//Event listeners
+// Event listeners
 form.addEventListener("submit", submitFiber);
 fiberSelect.addEventListener("change", filterFibers);
 resetBtn.addEventListener("click", resetApp);
