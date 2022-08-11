@@ -10,6 +10,12 @@ This is a mobile-responsive fiber charting application I made for a friend to he
 
 <br>
 
+## Demo
+
+Watch a short demo [here](https://drive.google.com/file/d/1jOfa04vj0hMdUnDaJh-wy_UJeBNZQStr/view)
+
+<br>
+
 ## Screenshots
 
 ![Screenshot of light-mode with title and grid](./img/screenshots/Light-mode-and-title.png)
