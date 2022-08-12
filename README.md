@@ -1,6 +1,6 @@
 # FiberChart
 
-## Link:
+## Link
 
 Check it out here:
 
