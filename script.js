@@ -42,7 +42,6 @@ const submitFiber = (e) => {
   e.preventDefault();
 
   const inputValue = +numberInput.value.trim();
-  // console.log(inputValue);
 
   if (positiveNumberRange(inputValue) || !numberValidation(inputValue)) {
     alert("Please enter a positive number less than 999856");
@@ -51,7 +50,6 @@ const submitFiber = (e) => {
 
   const fiberLoop = children.forEach(function (number, i) {
     let fibers = (number.textContent = i + inputValue);
-    // console.log(fibers);
   });
 
   resetBtn.classList.add("pulse");

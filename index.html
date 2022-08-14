@@ -7,11 +7,13 @@
      <!-- content="width=device-width, initial-scale=1.0" -->
     <meta name="description" content="FiberChart is a fiber-optic internet charting application that OSP technicians can use in the field to chart specific fibers they are looking for. Users can filter fibers and input specific fiber numbers to propagate the fiber range they are working with."/>
 
+    <!-- Favicon from unsplash.com -->
     <link rel="icon" href="./img/letter-f - favicon.png"/>
 
     <!-- For mobile iOS homescreen -->
     <link rel="apple-touch-icon" href="./img/letter-f.png"/>
 
+    <!-- For Android homescreen -->
     <link rel="manifest" href="manifest.webmanifest" />
 
     <link rel="stylesheet" href="style.css" />
@@ -56,7 +58,8 @@
       </div>
     </header>
 
-    <!-- Major container - main content consider <main>-->
+    <!-- Major container - main content -->
+    <main>
     <div class="container">
       <!-- Minor container -->
       <div class="upper-color-child-container">
@@ -248,14 +251,14 @@
         <div class="child skyblue">144</div>
       </section>
     </div>
+  </main>
     <!-- Form section -->
+    <section>
     <div class="forms">
       <!-- Container for forms -->
       <div class="flex-form">
         <form class="select-form">
-          <label class="fiber-select-label" for="fiber-select"
-            >Fiber Count</label
-          >
+          <label class="fiber-select-label" for="fiber-select">Fiber Count</label>
           <select class="inputs fiber-select">
             <option value="" disabled selected>#</option>
             <option value="12">12</option>
@@ -284,10 +287,11 @@
         <button class="inputs reset-btn">Reset</button>
       </div>
     </div>
+  </section>
     <footer>
       <p>Developed by Nick Mullenmeister</p>
       <p>Concept by Jared Korbel</p>
-      <p class="copyright">Copyright &copy; <span class="copyright-year"></span>, All rights reserved.</p>
+      <p class="copyright">Copyright &copy; <span class="copyright-year">&nbsp;</span>, All rights reserved.</p>
     </footer>
   </body>
 </html>
